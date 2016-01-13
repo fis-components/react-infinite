@@ -179,10 +179,10 @@ var Infinite = React.createClass({
       };
       utilities.nodeScrollListener = function () {};
       utilities.getScrollTop = function () {
-        return window.scrollY;
+        return window.pageYOffset;
       };
       utilities.setScrollTop = function (top) {
-        window.scroll(window.scrollX, top);
+        window.scroll(window.pageXOffset, top);
       };
       utilities.scrollShouldBeIgnored = function () {
         return false;
